@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline; 
+    /*O "vertical-align" é comumente usado para controlar o alinhamento vertical de elementos HTML em relação ao texto. Sua configuração padrão é 'baseline'.*/
+}
+
+body, html {
+    background-color: white;
+}
+
+header {
+    width: 1024px;      /*define uma largura para o header.*/
+    margin: 0 auto;
+
+    display: flex;      /*deixa os itens filhos flexíveis.*/
+    flex-direction: row;    /*deixa os itens em uma linha (row).*/
+    justify-content: space-between;     /*dá espaços iguais divididos pelo tamanho da caixa principal (nesse caso, o menu em si).*/
+    align-items: center;    /*alinha os itens do header no centro do mesmo.*/
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    padding: 0px 15px;
+}
