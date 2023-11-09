@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,600;1,100;1,300&family=Merriweather:ital@1&family=Passion+One:wght@700&family=Source+Sans+3:wght@200&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 100%;
     font-family: inherit;
+    text-decoration: none;
     vertical-align: baseline; 
     /*O "vertical-align" é comumente usado para controlar o alinhamento vertical de elementos HTML em relação ao texto. Sua configuração padrão é 'baseline'.*/
 }
@@ -14,10 +17,7 @@ body, html {
     background-color: white;
 }
 
-header {
-    width: 1024px;      /*define uma largura para o header.*/
-    margin: 0 auto;
-
+header section {
     display: flex;      /*deixa os itens filhos flexíveis.*/
     flex-direction: row;    /*deixa os itens em uma linha (row).*/
     justify-content: space-between;     /*dá espaços iguais divididos pelo tamanho da caixa principal (nesse caso, o menu em si).*/
@@ -25,11 +25,38 @@ header {
 }
 
 header nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    list-style-type: none;  /* tira as bolinhas da lista*/
+    display: flex;      /*deixa os filhos da caixa flexíveis*/
+    align-items: center;    /*alinha os itens no centro*/
+    flex-direction: row;    /*deixa os itens em forma de linha (o menu, nesse caso)*/
 }
 
-header nav ul li {
-    padding: 0px 15px;
+header nav ul li a {
+    margin: 0px 15px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #3399cc;
+}
+
+header nav ul li a.btn {
+    padding: 4px 30px;
+}
+
+.btn.btn-laranja {
+    background-color: #ff6633;
+    border-radius: 20px;
+    color: white;
+}
+
+.conteiner {
+    /*class para deixar o header e o main com as mesmas configurações básicas, sem precisar repetí-las.*/
+    width: 1024px;      /*define uma largura para o header e para o main.*/
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    /*class para deixar os sections main e header ambos com as mesmas configurações básicas, sem necessidade de repetí-las.*/
+    display: flex;
+    flex-direction: row;
 }
