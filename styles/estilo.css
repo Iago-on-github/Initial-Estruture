@@ -44,14 +44,15 @@ header nav ul li a.btn {
 .btn.btn-laranja {
     background-color: #ff6633;
     border-radius: 20px;
+    padding: 4px 30px;
     color: white;
 }
 
 .conteiner {
-    /*class para deixar o header e o main com as mesmas configurações básicas, sem precisar repetí-las.*/
-    width: 1024px;      /*define uma largura para o header e para o main.*/
-    margin: 30px auto;
     display: flex;
+    /*class para deixar o header e o main com as mesmas configurações básicas, sem precisar repetí-las.*/
+    width: 1024px; /*define uma largura para o header e para o main.*/
+    margin: 30px auto;
     flex-direction: column;
 }
 
@@ -59,4 +60,38 @@ header nav ul li a.btn {
     /*class para deixar os sections main e header ambos com as mesmas configurações básicas, sem necessidade de repetí-las.*/
     display: flex;
     flex-direction: row;
+}
+
+.sobre-webdesigner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-webdesigner article {
+    width: 250px;
+}
+
+.sobre-webdesigner article h1 {
+    font-size: 3.5em;
+    line-height: 90%;
+    font-weight: 400;
+    color: #333366;
+}
+
+.sobre-webdesigner article h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 200%;
+    color: #3399CC;
+}
+
+.sobre-webdesigner article p {
+    color: #3399CC;
+    margin: 10px 0px 30px;
+}
+
+.sobre-webdesigner article img {
+    width: 600px;
 }
