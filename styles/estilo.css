@@ -9,12 +9,16 @@
     font-size: 100%;
     font-family: inherit;
     text-decoration: none;
+    list-style-type: none;
     vertical-align: baseline; 
     /*O "vertical-align" é comumente usado para controlar o alinhamento vertical de elementos HTML em relação ao texto. Sua configuração padrão é 'baseline'.*/
 }
 
-body, html {
+body {
     background-color: white;
+    background-image: url(../img/bolha-background.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 header section {
@@ -63,35 +67,46 @@ header nav ul li a.btn {
 }
 
 .sobre-webdesigner {
-    align-items: center;
+    align-items: center; /*deixar os itens dentro do section centralizados.*/
     justify-content: space-between;
 }
 
 .sobre-webdesigner article {
-    width: 250px;
+    width: 250px; /*largura de tudo que está detro do article.*/
 }
 
 .sobre-webdesigner article h1 {
     font-size: 3.5em;
-    line-height: 90%;
-    font-weight: 400;
+    line-height: 90%;   /*altura do espaçamento entre uma palavra e outra do título.*/
+    font-weight: 400;   /*tipo da fonte (italic, bold, bolder) em valores númericos.*/
     color: #333366;
 }
 
 .sobre-webdesigner article h2 {
     font-size: 1.5em;
     font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 200%;
+    text-transform: uppercase;  /*transforma as palavras deixando-as com letras maiúsculas.*/
+    letter-spacing: 3px;    /*espaçamento entre as letras.*/
+    line-height: 200%;     /*espaçamento entre o subtítulo e o título principal e o parágrafo.*/
     color: #3399CC;
 }
 
 .sobre-webdesigner article p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
     color: #3399CC;
     margin: 10px 0px 30px;
 }
 
 .sobre-webdesigner article img {
-    width: 600px;
+    width: 600px;   /*largura da imagem.*/
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li a img {
+    margin-left: 30px;
+    width: 30px;
 }

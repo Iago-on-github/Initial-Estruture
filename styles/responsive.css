@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*começo de formatação responsivo utlizando Media Query.*/
+
+@media (min-width: 1900px) and (max-width: 2500px) {
+    body {
+        background-size: 870px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1900px) {
+    body {
+        background-size: 800px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1700px) {
+    body {
+        background-size: 750px;
+    }
+}
+
+@media (min-width: 1330px) and (max-width: 1440px) {
+    body {
+        background-size: 700px;
+    }
+}
